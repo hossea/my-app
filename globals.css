@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .header_top_icon_wrapper{
+      @apply bg-gray-100 p-[6px] text-[14px] rounded-md cursor-pointer hover:bg-white hover:text-white;
+    }
+  
+    .navbar_link:hover{
+      color: #ffffff;
+      transition: all 0.4s;
+  
+    }
+    .navbar_link::after{
+      position: absolute;
+      content: "";
+      background-color: #ffffff;
+      height: 3px;
+      width: 100%;
+      bottom: -5px;
+      left: 0;
+      scale: 0;
+      transform-origin: left;
+      transition: all 0.4s;
+    }
+    .navbar_link:hover::after{
+      scale: 1;
+    }
+  }
+
+  .read-btn{
+    
+  }
+
+  
